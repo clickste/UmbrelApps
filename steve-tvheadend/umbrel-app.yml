@@ -1,24 +1,22 @@
-version: '3.5'
-
-services:
-  app_proxy:
-    environment:
-      APP_HOST: steve-tvheadend
-      APP_PORT: 9981
-
-  server:
-   image: lscr.io/linuxserver/tvheadend:latest
-    container_name: tvheadend
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      - RUN_OPTS= #optional
-    volumes:
-      - /path/to/data:/config
-      - /path/to/recordings:/recordings
-    ports:
-      - 9981:9981
-      - 9982:9982
- 
-    restart: unless-stopped
+manifestVersion: 1
+id: steve-tvheadend
+name: tvheadend.
+category: PVR
+version: "0.0.1"
+tagline: Self Hosted PVR.
+icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tvheadend-big.png
+description: >
+  VHeadend, sometimes TVH for short, is a server application that reads video streams from LinuxTV sources and publishes them as internet streams. It supports multiple inputs, a DVB-T USB tuner stick and a Sat>IP tuner for instance, combining them together into a single channel listing.
+dependencies: []
+repo: https://lscr.io/linuxserver/tvheadend
+port: 9981
+gallery:
+  - https://raw.githubusercontent.com/MauriceNino/dashdot/main/apps/docs/static/img/screenshot_darkmode.png
+  - https://raw.githubusercontent.com/MauriceNino/dashdot/main/apps/docs/static/img/screenshot_lightmode.png
+path: ""
+defaultPassword: ""
+releaseNotes: >
+  What's Changed
+  -
+submitter: BigBearCommunity
+submission:
