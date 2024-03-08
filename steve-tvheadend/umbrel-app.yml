@@ -1,8 +1,8 @@
 manifestVersion: 1
 id: steve-tvheadend
 name: tvheadend.
-category: PVR
-version: "0.0.1"
+category: Dashboards
+version: "1"
 tagline: Self Hosted PVR.
 icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tvheadend-big.png
 description: >
