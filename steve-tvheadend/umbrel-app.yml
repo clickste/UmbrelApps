@@ -5,8 +5,7 @@ category: Dashboards
 version: "1"
 tagline: Self Hosted PVR.
 icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tvheadend-big.png
-description: >
-  VHeadend, sometimes TVH for short, is a server application that reads video streams from LinuxTV sources and publishes them as internet streams. It supports multiple inputs, a DVB-T USB tuner stick and a Sat>IP tuner for instance, combining them together into a single channel listing.
+description: TVHeadend, sometimes TVH for short, is a server application that reads video streams from LinuxTV sources and publishes them as internet streams. It supports multiple inputs, a DVB-T USB tuner stick and a Sat>IP tuner for instance, combining them together into a single channel listing.
 dependencies: []
 repo: https://lscr.io/linuxserver/tvheadend
 port: 9981
